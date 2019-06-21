@@ -1,0 +1,22 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+ adapter: oracle_enhanced
+ database: dwdb.dad-way.local:1521/dwdb01
+ pool: 5
+ timeout: 5000
+ username: lis
+ password: lis
+
+development:
+ <<: *default
+
+test:
+ <<: *default
+
+production:
+ <<: *default

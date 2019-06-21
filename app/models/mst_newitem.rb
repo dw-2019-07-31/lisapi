@@ -1,0 +1,2 @@
+class MstNewitem < ApplicationRecord
+end

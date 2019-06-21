@@ -1,0 +1,2 @@
+class MstBrand < ApplicationRecord
+end
